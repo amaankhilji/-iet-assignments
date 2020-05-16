@@ -1,0 +1,17 @@
+<%- include ("partials/header");-%>
+<a href="/upload"  type="button" class="btn btn-primary btn-lg btn-block">Add Assignment</a>
+
+
+<%  posts.forEach(function(post){ %>
+    <h2><%=post.details%></h2>
+    <p><%=post.subject%></p>
+    <p><%=post.class%></p>
+    <p><%=post.topic%></p>
+    <p>gdrive link:  <a  href="<%=post.post%>">check</a> 
+<hr>
+    <% }) %>
+
+
+
+
+<%- include ("partials/footer");-%>

@@ -1,0 +1,33 @@
+<%- include ("partials/header");-%>
+
+<h1>learning resources</h1>
+
+<form class="" action="/res" method="post">
+    <div class="form-group">
+        <label>topic</label>
+        <input class="form-control form-control-lg" type="text" placeholder=""  name="a">
+        <label>description</label>
+        <input class="form-control form-control-lg" type="text" placeholder="all the details"  name="b">
+        <label>link</label>
+        <input class="form-control form-control-lg" type="text" placeholder="provide link"  name="c">
+    </div>
+    <button class="btn btn-primary" type="submit" name="button">Add</button>
+  </form>
+<hr>
+
+<h1>resources</h1>
+
+
+<%  losts.forEach(function(lost){ %>
+
+    <h2><%=lost.t%></h2>
+     <p><%=lost.d%></p>
+     <p>gdrive link:  <a href="<%=lost.l%>">see</a> 
+  <hr>
+  
+     <% }) %>
+  
+
+
+     
+<%- include ("partials/footer");-%>

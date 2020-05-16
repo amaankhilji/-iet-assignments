@@ -1,0 +1,25 @@
+<%- include ("partials/header");-%>
+
+<h1>Upload</h1>
+<form class="" action="/upload" method="post">
+  <div class="form-group">
+    <label>Subject</label>
+    <input class="form-control form-control-sm" type="text" placeholder="eg- physics,cpp" name="subject">
+    <label>Class</label>
+    <input class="form-control form-control-sm" type="text" placeholder="eg- IT,CS" name="class">
+    <label>Details</label>
+    <input class="form-control form-control-sm" type="text" placeholder="name_rollno." name="details">
+    <label>Topic</label>
+    <input class="form-control form-control-sm" type="text" placeholder="assignment topic" name="topic">
+    <label>Post</label>
+    <input class="form-control form-control-lg" type="text" placeholder="google drive link"  name="post">
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Submit</button>
+</form>
+
+
+
+
+<%- include ("partials/footer");-%>
+
+

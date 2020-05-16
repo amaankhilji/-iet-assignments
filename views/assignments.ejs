@@ -1,0 +1,37 @@
+<%- include ("partials/header");-%>
+
+<h1>new assignment</h1>
+
+<form class="" action="/assignments" method="post">
+    <div class="form-group">
+        <label>Topic</label>
+        <input class="form-control form-control-lg" type="text" placeholder=""  name="top">
+        <label>details of assignment to upload</label>
+        <input class="form-control form-control-lg" type="text" placeholder="all the details"  name="data">
+      <label>Post</label>
+      <input class="form-control form-control-lg" type="text" placeholder="google drive link"  name="link">
+    </div>
+    <button class="btn btn-primary" type="submit" name="button">Submit</button>
+  </form>
+<hr>
+
+<h1>recents</h1>
+
+
+<%  hosts.forEach(function(host){ %>
+
+    <h2><%=host.top%></h2>
+     <p><%=host.data%></p>
+     <p>gdrive link:  <a href="<%=host.link%>">see</a> 
+  <hr>
+  
+     <% }) %>
+  
+  
+  
+
+
+
+
+
+<%- include ("partials/footer");-%>
